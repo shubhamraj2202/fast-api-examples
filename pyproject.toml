@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "fastapi-examples"
+version = "0.1.0"
+description = "Python project exmaple for using FastAPI"
+authors = ["Shubham Raj <shubhamraj2202@gmail.com>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{include = "fastapi_examples"}]
+keywords = ["fastapi"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "*"
+uvicorn = "^0.20.0"
+pydantic = "*"
+python-multipart = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+isort = "*"
+pre-commit = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^6.0.0"
+pytest-cov = "*"
+codecov = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
